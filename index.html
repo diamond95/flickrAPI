@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html>
+   <head>
+      <title>Flickr API</title>
+      <meta name="viewport" content="width=device-width, initial-scale=1.0">
+      <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+      <link rel="stylesheet" type="text/css" href="css/style.css" />
+      <script type="text/javascript" src="js/jquery-1.10.2.min.js"></script>
+   </head>
+   <body>
+      <div class="header">
+         <div class="container">
+            <h1>Flickr API</h1>
+            <span class="slogan"><font color="white">Flickr Photo Stream</font></span>
+         </div>
+      </div>
+      <div class="row">
+         <div class="col-4"></div>
+         <div class="col-4">
+            <div class="pocetna">
+               <h1>Search Flickr photos by tag/title</h1>
+               <div class="container"></div>
+            </div>
+         </div>
+         <div class="col-4"></div>
+      </div>
+      <br />
+      <div class="row">
+         <div class="col-2"></div>
+         <div class="col-8">
+            <div class="pretraga">
+               <h1>Enter a single tag</h1>
+               <input type="text" class="inputstyle" id="input_search" placeholder="" />
+               <button class="button" id="Search">Search</button>
+               <br />
+               <center>
+                  <input type="radio" name="search_option" id="tag" value="1" checked="checked">
+                  <div class="search_option"> by Tag&nbsp;</div>
+                  <br/>
+                  <input type="radio" name="search_option" id="title" value="2">
+                  <div class="search_option"> by Title</div>
+               </center>
+               <div style="display:none;margin-top:10px;" class="loader"><img src="images/loader.gif"></div>
+               <br />
+               <br />
+               <div id="gallery"></div>
+            </div>
+         </div>
+         <div class="col-2"></div>
+      </div>
+      <div id="footer">
+         <div class="container">
+            <h5>Ivan Miljanić - Flickr API 2019.</h5>
+         </div>
+      </div>
+   </body>
+   <script type="text/javascript" src="js/index.js"></script>
+</html>
