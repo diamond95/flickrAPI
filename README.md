@@ -1,4 +1,8 @@
-# Flickr API - search photos by tag / title  - infinite scroll
+# Flickr API Photo Stream
+- search photos by tag / title
+- infinite scroll
+- safe search
+- photo details
 
 ## Installing
 
